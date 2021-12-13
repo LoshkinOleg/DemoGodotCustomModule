@@ -1,5 +1,7 @@
 #include "MyPlayerController.h"
 
+#include "extern/pybind11/include/pybind11/pybind11.h"
+
 Vector2 MyPlayerController::ComputeVelocity(bool moveRight, bool moveUp, bool moveLeft, bool moveDown)
 {
 	const float MOV_SPEED_MUL = 100.0f;
