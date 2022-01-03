@@ -1,0 +1,1 @@
+Move all the python*.lib files to godot's root for scons to be able to find these libs... couldn't find any other way to make things work with the .libs in the right place.

@@ -11,6 +11,3 @@ data_*/
 # Module compilation specific
 __pycache__/
 *.obj
-
-# Submodules
-extern/
