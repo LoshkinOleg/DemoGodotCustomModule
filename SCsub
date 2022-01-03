@@ -1,3 +1,8 @@
 Import('env')
 
-env.add_source_files(env.modules_sources, "*.cpp")
+# env.Append(LIBPATH=['/modules/MyPlayerController/extern/python310/libs'])
+env.Append(LIBS=['python3', 'python3_d', 'python310', 'python310_d'])
+
+myEnv = env.Clone()
+myEnv.Append(CPPPATH=['/extern/python310/include'])
+myEnv.add_source_files(env.modules_sources, "*.cpp")
